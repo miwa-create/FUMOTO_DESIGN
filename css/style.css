@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.mainvisual {
+    width: 100%;
+    background: linear-gradient(#61bb6a, #d3e6d5);
+    height: 6323px;
+}
+
+h1 {
+    font-family: Hanalei Regular;
+}
