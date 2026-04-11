@@ -8,34 +8,192 @@ body {
     color: #ffffff;
 }
 
+.header {
+    display: flex;
+}
+
+.mainvisual img {
+    margin-top: 24px;
+}
+
+.pc_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.pc_nav li {
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+}
+
+header p {
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+    position: absolute;
+    right: 81px;
+    top: 50px;
+}
+
+.pc_nav {
+    position: absolute;
+    right: 375px;
+    top: 50px;
+}
+
 h1 {
+    color: #ffffff;
     font-family: "Hanalei";
     font-size: 150px;
     text-align: center;
+    margin-top: 343px;
+    margin-bottom: 39px;
 }
 
-h2 {
+.name p {
+    color: #ffffff;
     font-family: "Zen Maru Gothic";
     font-weight: medium;
     text-align: center;
     margin-bottom: 80px;
     margin-top: 200px;
+    font-size: 36px;
 }
 
-.concept {
-    margin-bottom: 1em;
-}
-
-p {
+.concept p {
+    color: #ffffff;
     font-family: "Zen Maru Gothic";
     font-weight: normal;
     width: 500px;
     margin: 0 auto;
     line-height: 1.75;
     text-align: center;
+    margin-bottom: 1em;
 }
 
-.mainvisual img {
+.mainmountain img {
     display: block;
     margin: 0 auto;
+    width: 83%;
+}
+
+.grassland img {
+    display: block;
+    width: 21%;
+}
+
+.button,
+.yellowfootprints {
+    margin-bottom: 150px;
+}
+
+.yellowfootprints img {
+    display: block;
+    margin: 0 auto;
+    width: 7%;
+}
+
+h2 {
+    color: #2C5530;
+    font-family: "Zen Maru Gothic";
+    font-weight: bold;
+    text-align: center;
+    font-size: 36px;
+}
+
+.myfavorit {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 150px;
+    margin-top: 70px;
+}
+
+.myfavorit img {
+    width: 21%;
+}
+
+.climber img {
+    display: block;
+    margin: 0 auto;
+    width: 17%;
+    margin-bottom: 210px;
+}
+
+.productionresults_pc img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 81px;
+    margin-bottom: 72px;
+}
+
+.bear img {
+    width: 25%;
+    position: absolute;
+    right: 22%;
+    top: 475%;
+}
+
+.button2 {
+    margin-bottom: 390px;
+}
+
+.skill-card p {
+    color: #2C5530;
+    border-left: 1px solid #94C999;
+    margin-right: 45px;
+    font-family: "Zen Maru Gothic";
+    font-weight: normal;
+    padding-left: 15px;
+    align-items: center;
+    background-color: #ffffff;
+    width: 205px;
+    height: 50px;
+    margin-bottom: 45px;
+}
+
+.skill1,
+.skill2,
+.skill3 {
+    display: flex;
+    align-items: center;
+}
+
+.skill1 {
+    margin-top: 85px;
+}
+
+.mountainillustration img {
+    display: block;
+    margin: 0 auto;
+    width: 111%;
+    margin-bottom: 104px;
+}
+
+.greenfootprints img {
+    display: block;
+    margin: 0 auto;
+    width: 7%;
+    margin-bottom: 150px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-family: "Zen Maru Gothic";
+    font-weight: bold;
+    color: #2C5530;
+    font-size: 16px;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.logoblack img {
+    display: block;
+    margin: 0 auto;
+    width: 28%;
+    margin-bottom: 87px;
 }
