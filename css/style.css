@@ -142,6 +142,7 @@ h2 {
 .skill-card p {
     color: #2C5530;
     border-left: 1px solid #94C999;
+    margin-left: 15px;
     margin-right: 45px;
     font-family: "Zen Maru Gothic";
     font-weight: normal;
@@ -151,6 +152,7 @@ h2 {
     width: 205px;
     height: 50px;
     margin-bottom: 45px;
+    align-items: center;
 }
 
 .skill1,
