@@ -87,6 +87,16 @@ h1 {
     margin-bottom: 150px;
 }
 
+.button,
+.button2 {
+    background: #ffffff;
+    padding: 20px 40px;
+    font-size: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
 .yellowfootprints img {
     display: block;
     margin: 0 auto;
@@ -120,7 +130,7 @@ h2 {
     margin-bottom: 210px;
 }
 
-.productionresults_pc img {
+.productionresults_pc>img {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -128,11 +138,15 @@ h2 {
     margin-bottom: 72px;
 }
 
+.productionresults_pc {
+    position: relative;
+}
+
 .bear img {
     width: 25%;
     position: absolute;
-    right: 22%;
-    top: 475%;
+    left: 55%;
+    top: 60%;
 }
 
 .button2 {
@@ -141,9 +155,7 @@ h2 {
 
 .skill-card p {
     color: #2C5530;
-    border-left: 1px solid #94C999;
-    margin-left: 15px;
-    margin-right: 45px;
+    /* border-left: 1px solid #94C999; */
     font-family: "Zen Maru Gothic";
     font-weight: normal;
     padding-left: 15px;
@@ -151,8 +163,26 @@ h2 {
     background-color: #ffffff;
     width: 205px;
     height: 50px;
-    margin-bottom: 45px;
     align-items: center;
+    display: flex;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.skill-card p::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background-color: #94c999;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .skill1,
@@ -160,10 +190,16 @@ h2 {
 .skill3 {
     display: flex;
     align-items: center;
+    gap: 60px;
+    z-index: 2;
 }
 
 .skill1 {
     margin-top: 85px;
+}
+
+.skill-top {
+    position: relative;
 }
 
 .mountainillustration img {
@@ -171,6 +207,9 @@ h2 {
     margin: 0 auto;
     width: 111%;
     margin-bottom: 104px;
+    position: absolute;
+    top: 55%;
+    z-index: 1;
 }
 
 .greenfootprints img {
@@ -178,6 +217,7 @@ h2 {
     margin: 0 auto;
     width: 7%;
     margin-bottom: 150px;
+    margin-top: 40%;
 }
 
 footer ul {
