@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+body {
+    background: #7BBE82;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 2% 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_wrap p,
+.pc_nav {
+    background: #ffffff;
+    padding: 25px 52px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+}
+
+
+.pc_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.pc_nav li {
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+}
+
+h2 {
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+    font-size: 36px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+.myprofile img {
+    margin-top: 50px;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    padding: 7px;
+}
+
+.myname {
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+.myname p {
+    color: #333333;
+    font-family: "Zen Maru Gothic";
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.name {
+    font-size: 32px;
+}
+
+.nameen {
+    font-size: 16px;
+}
+
+.reason h3,
+.reason p {
+    font-family: "Zen Maru Gothic";
+    color: #ffffff;
+}
+
+.reason h3 {
+    font-size: 36px;
+    margin-bottom: 48px;
+}
+
+.reason p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 144px;
+}
+
+.mydream h3,
+.mydream p {
+    font-family: "Zen Maru Gothic";
+    color: #ffffff;
+}
+
+.mydream h3 {
+    font-size: 36px;
+    margin-bottom: 48px;
+}
+
+.mydream p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 136px;
+}
+
+.reason {
+    position: relative;
+}
+
+.reason img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    z-index: -1;
+}
+
+.removebutton {
+    background: #ffffff;
+    padding: 15px 45px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 176px;
+}
+
+.greenfootprints img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 128px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-family: "Zen Maru Gothic";
+    font-weight: bold;
+    color: #2C5530;
+    font-size: 16px;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.logoblack img {
+    display: block;
+    margin: 0 auto;
+    width: 28%;
+    margin-bottom: 87px;
+}

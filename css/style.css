@@ -8,13 +8,30 @@ body {
     color: #ffffff;
 }
 
-.header {
+
+.header_wrap {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 2% 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.mainvisual img {
-    margin-top: 24px;
+.header_wrap p,
+.pc_nav {
+    background: #ffffff;
+    padding: 25px 52px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
 }
+
 
 .pc_nav ul {
     list-style: none;
@@ -27,27 +44,14 @@ body {
     font-family: "Zen Maru Gothic";
 }
 
-header p {
-    color: #2c5530;
-    font-family: "Zen Maru Gothic";
-    position: absolute;
-    right: 81px;
-    top: 50px;
-}
-
-.pc_nav {
-    position: absolute;
-    right: 375px;
-    top: 50px;
-}
 
 h1 {
     color: #ffffff;
     font-family: "Hanalei";
     font-size: 150px;
     text-align: center;
-    margin-top: 343px;
-    margin-bottom: 39px;
+    margin-top: 336px;
+    margin-bottom: 36px;
 }
 
 .name p {

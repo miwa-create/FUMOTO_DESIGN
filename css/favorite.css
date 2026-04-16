@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+body {
+    background: #7BBE82;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 2% 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_wrap p,
+.pc_nav {
+    background: #ffffff;
+    padding: 25px 52px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+}
+
+
+.pc_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.pc_nav li {
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+}
