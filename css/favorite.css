@@ -35,3 +35,85 @@ body {
     color: #2c5530;
     font-family: "Zen Maru Gothic";
 }
+
+h2 {
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+    font-size: 36px;
+    margin-top: 144px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.eat,
+.make,
+.speak {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    margin: 48px 200px 0;
+    gap: 48px;
+}
+
+.eat img,
+.make img,
+.speak img {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.eat h3,
+.eat p,
+.make h3,
+.make p,
+.speak h3,
+.speak p {
+    font-family: "Zen Maru Gothic";
+    color: #2B432E;
+}
+
+.eat h3,
+.make h3,
+.speak h3 {
+    font-size: 36px;
+}
+
+.eat p,
+.make p,
+.speak p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 16px;
+}
+
+.removebutton {
+    background: #ffffff;
+    padding: 15px 45px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 176px;
+    margin-top: 88px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-family: "Zen Maru Gothic";
+    font-weight: bold;
+    color: #2C5530;
+    font-size: 16px;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.logoblack img {
+    display: block;
+    margin: 0 auto;
+    width: 28%;
+    margin-bottom: 87px;
+}
