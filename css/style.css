@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+
 body {
     background: linear-gradient(#61bb6a, #d3e6d5);
 }
@@ -81,9 +83,24 @@ h1 {
     width: 83%;
 }
 
+.concept {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
 .grassland img {
     display: block;
+    margin-left: 70%;
+    top: 0;
     width: 21%;
+    position: relative;
+    top: 120px;
+}
+
+.button {
+    margin-top: 80px;
 }
 
 .button,
@@ -241,5 +258,23 @@ footer ul li {
     display: block;
     margin: 0 auto;
     width: 28%;
-    margin-bottom: 87px;
+}
+
+
+footer {
+    position: relative;
+}
+
+.sun img {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    width: 38%;
+}
+
+.cloud img {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 38%;
 }
