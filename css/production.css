@@ -55,7 +55,6 @@ section {
 
 .button-wrapper {
     width: 27%;
-    height: 12.5%;
 }
 
 .button-wrapper button {
@@ -71,4 +70,44 @@ section {
     align-items: center;
     justify-content: center;
     gap: 3%;
+}
+
+.image-button2 {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-button2 img {
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Zen Maru Gothic";
+    color: #333;
+    margin-top: 1%;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 200px;
+}
+
+footer ul li {
+    font-family: "Zen Maru Gothic";
+    font-weight: bold;
+    color: #2C5530;
+    font-size: 16px;
+    margin-bottom: 38px;
+    text-align: center;
+}
+
+.logoblack img {
+    display: block;
+    margin: 0 auto;
+    width: 28%;
+    margin-bottom: 87px;
 }
