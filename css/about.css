@@ -121,7 +121,7 @@ section {
     z-index: -1;
 }
 
-.removebutton {
+.removebutton button {
     background: #ffffff;
     padding: 15px 45px;
     font-size: 20px;
@@ -129,6 +129,10 @@ section {
     cursor: pointer;
     font-weight: 600;
     margin-bottom: 176px;
+}
+
+.removebutton {
+    text-align: center;
 }
 
 .greenfootprints img {

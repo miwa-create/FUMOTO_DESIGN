@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+body {
+    background: #7BBE82;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 2% 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_wrap p,
+.pc_nav {
+    background: #ffffff;
+    padding: 25px 52px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+}
+
+
+.pc_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.pc_nav li {
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+}
+
+h2 {
+    color: #2c5530;
+    font-family: "Zen Maru Gothic";
+    font-weight: bold;
+    margin-top: 9%;
+    display: inline-block;
+    border-bottom: 1.5px solid #2B432E;
+    padding-bottom: 0.7%;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 2%;
+}
+
+section {
+    text-align: center;
+}
+
+.button-wrapper {
+    width: 27%;
+    height: 12.5%;
+}
+
+.button-wrapper button {
+    border-radius: 16px;
+    border: none;
+    padding: 10% 15% 10% 15%;
+}
+
+.button-group {
+    display: flex;
+    margin-left: 6%;
+    margin-right: 6%;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}

@@ -110,6 +110,11 @@ h1 {
 
 .button,
 .button2 {
+    text-align: center;
+}
+
+.button button,
+.button2 button {
     background: #ffffff;
     padding: 20px 40px;
     font-size: 24px;
@@ -263,18 +268,19 @@ footer ul li {
 
 footer {
     position: relative;
+    padding-bottom: 96px;
 }
 
 .sun img {
     position: absolute;
-    top: 20%;
+    bottom: 0;
     right: 0%;
     width: 38%;
 }
 
 .cloud img {
     position: absolute;
-    top: 20%;
+    bottom: 0;
     left: 0%;
     width: 38%;
 }

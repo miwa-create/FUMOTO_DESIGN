@@ -87,7 +87,7 @@ h2 {
     margin-top: 16px;
 }
 
-.removebutton {
+.removebutton button {
     background: #ffffff;
     padding: 15px 45px;
     font-size: 20px;
@@ -96,6 +96,10 @@ h2 {
     font-weight: 600;
     margin-bottom: 176px;
     margin-top: 88px;
+}
+
+.removebutton {
+    text-align: center;
 }
 
 footer ul {
