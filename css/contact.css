@@ -58,8 +58,8 @@ p {
     color: #2c5530;
     font-size: 16px;
     font-family: "Zen Maru Gothic";
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 
 .form-group {
