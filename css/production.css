@@ -36,6 +36,53 @@ body {
     font-family: "Zen Maru Gothic";
 }
 
+/* スマホ版メニュー */
+.sp_nav,
+.pc_p .sp_btn {
+    display: none;
+}
+
+@media screen and (max-width:1175px) {
+
+    .pc_nav,
+    .pc_p {
+        display: none;
+    }
+
+    .sp_btn {
+        display: block;
+        height: 20px;
+    }
+
+    .sp_btn span {
+        display: block;
+        width: 40.5px;
+        height: 2px;
+        background-color: #ffffff;
+        position: relative;
+        top: 10px;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        display: block;
+        width: 40.5px;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+}
+
+
 h2 {
     color: #2c5530;
     font-family: "Zen Maru Gothic";
@@ -60,7 +107,7 @@ section {
 .button-wrapper button {
     border-radius: 16px;
     border: none;
-    padding: 10% 15% 10% 15%;
+    /* padding: 10% 15% 10% 15%; */
 }
 
 .button-group {
@@ -72,6 +119,15 @@ section {
     gap: 3%;
 }
 
+button {
+    width: 100%;
+    aspect-ratio: 390/230;
+}
+
+.image-button img {
+    height: 80%;
+}
+
 .image-button2 {
     display: flex;
     gap: 10px;
@@ -79,9 +135,12 @@ section {
     align-items: center;
 }
 
-.image-button2 img {
-    height: 100%;
-    object-fit: cover;
+.pop {
+    width: 29%;
+}
+
+.luxury {
+    width: 51%;
 }
 
 p {

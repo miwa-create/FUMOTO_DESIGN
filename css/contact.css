@@ -36,6 +36,52 @@ body {
     font-family: "Zen Maru Gothic";
 }
 
+/* スマホ版メニュー */
+.sp_nav,
+.pc_p .sp_btn {
+    display: none;
+}
+
+@media screen and (max-width:1175px) {
+
+    .pc_nav,
+    .pc_p {
+        display: none;
+    }
+
+    .sp_btn {
+        display: block;
+        height: 20px;
+    }
+
+    .sp_btn span {
+        display: block;
+        width: 40.5px;
+        height: 2px;
+        background-color: #ffffff;
+        position: relative;
+        top: 10px;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        display: block;
+        width: 40.5px;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+}
+
 h2 {
     color: #2c5530;
     font-size: 36px;
