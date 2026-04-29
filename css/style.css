@@ -330,3 +330,61 @@ footer {
     left: 0%;
     width: 38%;
 }
+
+
+
+
+
+/* ボタン全体の固定位置 */
+.circle-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* SVG（文字）を回転させる設定 */
+.rotating-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+    /* 10秒で1周、無限に続く */
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* SVG内のフォント設定 */
+svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+text {
+    font-size: 16px;
+    font-family: "Hanalei";
+    letter-spacing: 2px;
+    fill: #61bb6a;
+    /* 文字の色 */
+}
+
+
+/* ホバー時に少し大きくする演出 */
+.circle-top-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
