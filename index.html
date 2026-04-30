@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 
@@ -38,6 +39,7 @@
                     <li>コンセプト</li>
                     <li>制作実績</li>
                     <li>スキル</li>
+                    <li>お問い合わせ</li>
                 </ul>
             </nav>
 
@@ -164,5 +166,15 @@
         <img src="./image/topbuttongreen.svg" alt="ページトップボタン">
     </a>
 
+    <script>
+        $(function () {
+            $(".sp_btn").on("click", function () {
+                $(".sp_btn").toggleClass("open");
+                $(".sp_nav").fadeToggle();
+            });
+        })
+    </script>
+
+</body>
 
 </html>

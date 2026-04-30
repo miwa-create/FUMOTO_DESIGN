@@ -47,6 +47,31 @@ body {
 }
 
 /* スマホ版メニュー */
+.sp_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(144, 190, 153);
+    z-index: 1;
+}
+
+.sp_nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.sp_nav li {
+    color: #fff;
+    font-size: 36px;
+    font-family: "Zen Maru Gothic";
+}
+
 .sp_nav,
 .pc_p .sp_btn {
     display: none;
@@ -62,6 +87,11 @@ body {
     .sp_btn {
         display: block;
         height: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 2;
     }
 
     .sp_btn span {
@@ -387,4 +417,19 @@ text {
 .circle-top-btn:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+}
+
+/* ばつ用 */
+.sp_btn.open span {
+    background: transparent;
+}
+
+.sp_btn.open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.sp_btn.open span::after {
+    top: 0;
+    transform: rotate(135deg);
 }
