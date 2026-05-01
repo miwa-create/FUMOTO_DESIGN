@@ -10,13 +10,24 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alatsi&family=Diplomata+SC&family=Hanalei&family=Hind:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css"
+        integrity="sha512-jRxwiuoe3nt8lMSnOzNEuQ7ckDrLl31dwVYFWS6jklXQ6Nzl7b05rrWF9gjSxgOow5nFerdoN6CBB4gY5m5nDw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css"
+        integrity="sha512-UO+dUiFTr6cCaPZKCzXEGhYsuK8DkGAS5iThyMUrtHsg+INCFyRM3GiqJ4rjuvfEyn81XGjpfmjSwwR1dAjAsw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/workersmore.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"
+        integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -39,6 +50,7 @@
                 <li>コンセプト</li>
                 <li>制作実績</li>
                 <li>スキル</li>
+                <li>お問い合わせ</li>
             </ul>
         </nav>
 
@@ -49,22 +61,20 @@
         <h2>WORKERSさま（自主制作）</h2>
         <img src="./image/workwesmore.png" alt="workersのサイト">
         <div class="button-group">
-            <section>
+            <section class="cancelbtn">
                 <a href="#modal_01" class="btn">PC版</a>
                 <div class="remodal" data-remodal-id="modal_01">
                     <div><img src="./image/workerspc.jpg" alt="125naroom"></div>
-                    <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                    <button data-remodal-action="cancel" class="remodal-cancel">&times;</button>
                 </div>
             </section>
-            <section>
+            <section class="cancelbtn">
                 <a href="#modal_02" class="btn">SP版</a>
                 <div class="remodal" data-remodal-id="modal_02">
-                    <div><img src="./image/workerssp.jpg" alt="125naroom"></div>
-                    <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                    <div><img src="./image/workersspx3.jpg" alt="125naroom"></div>
+                    <button data-remodal-action="cancel" class="remodal-cancel">&times;</button>
                 </div>
             </section>
-            <!-- <button>PC版</button>
-            <button>SP版</button> -->
         </div>
         <div class="more">
             <div class="explanation">
@@ -103,6 +113,15 @@
             <img src="./image/logo-black.png" alt="黒いロゴ">
         </div>
     </footer>
+
+    <script>
+        $(function () {
+            $(".sp_btn").on("click", function () {
+                $(".sp_btn").toggleClass("open");
+                $(".sp_nav").fadeToggle();
+            });
+        })
+    </script>
 </body>
 
 </html>

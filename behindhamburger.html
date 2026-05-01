@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="./css/behindhamburger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alatsi&family=Diplomata+SC&family=Hanalei&family=Hind:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
@@ -34,6 +36,7 @@
                 <li>コンセプト</li>
                 <li>制作実績</li>
                 <li>スキル</li>
+                <li>お問い合わせ</li>
             </ul>
         </nav>
 
@@ -63,9 +66,11 @@
             <img src="./image/hamburgerluxurylast.jpg" alt="最後のハンバーガー高級">
         </div>
         <div class="icetext">
-            <p>POP感を出すためにとにかく図形を散りばめて寂しくないようにしていました。しかしなんだかコラージュ感がある...「なんで星？」「なんで花？」という違和感がたくさんありました。</p>
-            <p>星を無くし、集中線を付けることでこハンバーガーのドーンと登場している動きを想像させました。また、花は特に意味がなかったので丸にして、「平日限定」の文字に少しゆとりを持たせました。
-                下の「2024年5月10日〜」の部分も文字にメリハリを付けることで見やすくしました。</p>
+            <p>ハンバーガーを大きく真ん中に持ってきてデラックスであることを強調し、高級感のある金色と黒の組み合わせを商品名に起用していました。
+                また、その他の文字色は背景を黒にしていることから、白にして目立てせていました。</p>
+            <p>余白が全然ないことから高級感が出ていないことに気づき、ハンバーガーのサイズを小さくして、光彩と影を追加しました。
+                また値段や販売開始時期のは配置がバラバラで統一感がないのと、下ギリギリすぎて読みづらかったので、左側にまとめました。
+                背景は無彩色ではなく茶色を入れることで、白色の文字を読みやすくしました。</p>
         </div>
     </section>
 
@@ -85,6 +90,14 @@
             <img src="./image/logo-black.png" alt="黒いロゴ">
         </div>
     </footer>
+    <script>
+        $(function () {
+            $(".sp_btn").on("click", function () {
+                $(".sp_btn").toggleClass("open");
+                $(".sp_nav").fadeToggle();
+            });
+        })
+    </script>
 </body>
 
 </html>

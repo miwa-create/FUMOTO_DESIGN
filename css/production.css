@@ -37,12 +37,50 @@ body {
 }
 
 /* スマホ版メニュー */
+.sp_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(144, 190, 153);
+    z-index: 1;
+}
+
+.sp_nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.sp_nav li {
+    color: #fff;
+    font-size: 36px;
+    font-family: "Zen Maru Gothic";
+}
+
 .sp_nav,
 .pc_p .sp_btn {
     display: none;
 }
 
 @media screen and (max-width:1175px) {
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    /* topが適用されてない */
+    .button-wrapper {
+        padding-top: 4%;
+    }
+
+    .button-wrapper p {
+        padding-top: 2%;
+    }
 
     .pc_nav,
     .pc_p {
@@ -52,6 +90,11 @@ body {
     .sp_btn {
         display: block;
         height: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 2;
     }
 
     .sp_btn span {
@@ -86,7 +129,7 @@ body {
 h2 {
     color: #2c5530;
     font-family: "Zen Maru Gothic";
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 9%;
     display: inline-block;
     border-bottom: 1.5px solid #2B432E;
@@ -169,4 +212,19 @@ footer ul li {
     margin: 0 auto;
     width: 28%;
     margin-bottom: 87px;
+}
+
+/* ばつ用 */
+.sp_btn.open span {
+    background: transparent;
+}
+
+.sp_btn.open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.sp_btn.open span::after {
+    top: 0;
+    transform: rotate(135deg);
 }
