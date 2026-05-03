@@ -112,6 +112,7 @@ body {
     }
 }
 
+
 h2 {
     color: #2c5530;
     font-size: 36px;
@@ -140,6 +141,10 @@ p {
 
 .form-group {
     margin-bottom: 24px;
+    gap: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 label {
@@ -165,12 +170,6 @@ textarea {
 textarea {
     height: 150px;
     border-radius: 20px;
-}
-
-.form-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .submit-btn {
@@ -232,4 +231,24 @@ footer ul li {
 .sp_btn.open span::after {
     top: 0;
     transform: rotate(135deg);
+}
+
+@media screen and (max-width:1175px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group label {
+        margin-bottom: 10px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .submit-btn {
+        margin-left: 1%;
+    }
 }

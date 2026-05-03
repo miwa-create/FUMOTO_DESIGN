@@ -304,3 +304,53 @@ footer ul li {
     top: 0;
     transform: rotate(135deg);
 }
+
+@media screen and (max-width:1175px) {
+
+    .explanation h3,
+    .vertical-line h3,
+    .point h3 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+
+    .more {
+        display: block;
+    }
+
+    .explanation,
+    .point {
+        width: 78%;
+        padding-left: 9%;
+    }
+
+    .explanation h3,
+    .point h3 {
+        font-weight: 300;
+    }
+
+    .explanation h3::before,
+    .point h3::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 3px;
+        height: 1em;
+        background-color: #2C5530;
+        margin-right: 15px;
+    }
+
+    .explanation p,
+    .point p {
+        margin-left: 15px;
+    }
+
+    section img {
+        margin-bottom: 35px;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}

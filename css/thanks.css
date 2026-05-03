@@ -113,7 +113,7 @@ body {
 }
 
 h2 {
-    color: #333;
+    color: #2C5530;
     font-size: 32px;
     font-family: "Zen Maru Gothic";
     margin-top: 12%;
@@ -183,4 +183,25 @@ footer ul li {
 .sp_btn.open span::after {
     top: 0;
     transform: rotate(135deg);
+}
+
+@media screen and (max-width:1175px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .removebutton button {
+        font-size: 16px;
+        padding: 11px 36px;
+    }
+
+    h2 {
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width:1175px) {
+    .sp_br {
+        display: none;
+    }
 }

@@ -131,7 +131,7 @@ h2 {
     font-size: 36px;
     margin-top: 144px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .eat,
@@ -224,4 +224,29 @@ footer ul li {
 .sp_btn.open span::after {
     top: 0;
     transform: rotate(135deg);
+}
+
+@media screen and (max-width:1175px) {
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .eat h3,
+    .make h3,
+    .speak h3 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .eat p,
+    .make p,
+    .speak p {
+        width: 320px;
+    }
+
+    .removebutton button {
+        font-size: 16px;
+        padding: 12px 36px;
+    }
 }
