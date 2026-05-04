@@ -291,6 +291,8 @@ h1 {
     cursor: pointer;
     font-family: "Alatsi";
     font-weight: 600;
+    color: #333333;
+    border: 2px solid #333333;
 }
 
 .yellowfootprints img {
