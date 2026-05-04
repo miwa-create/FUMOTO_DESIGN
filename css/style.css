@@ -553,7 +553,7 @@ text {
     .button2 button {
         font-size: 16px;
         padding: 12px 36px;
-        margin-top: 3%;
+        margin-top: 80px;
     }
 
     .button2 {
@@ -747,6 +747,16 @@ text {
 
     .concept p {
         width: 300px;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .grassland img {
+        display: none;
+    }
+
+    .button button {
+        margin-top: 300px;
     }
 }
 
