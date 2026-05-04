@@ -10,6 +10,33 @@ body {
     color: #ffffff;
 }
 
+.pc_nav a {
+    /* 下準備：アニメーションを滑らかにするため */
+    background-image: linear-gradient(yellow, yellow);
+    background-repeat: no-repeat;
+    background-position: center left;
+    /* 線の開始位置 */
+    background-size: 0% 30%;
+    /* 最初は横幅0%、高さ40%（線の太さ） */
+    transition: background-size 0.3s;
+
+    display: inline;
+    /* インライン要素に適用 */
+    text-decoration: none;
+}
+
+.pc_nav a:hover {
+    cursor: pointer;
+    background-size: 100% 40%;
+}
+
+.pc_p:hover,
+.button button:hover,
+.more_p:hover {
+    cursor: pointer;
+    background-color: #FFFCB8;
+}
+
 
 .header_wrap {
     display: flex;
@@ -32,6 +59,7 @@ body {
     cursor: pointer;
     color: #2c5530;
     font-family: "Zen Maru Gothic";
+    border: 2px #333333 solid;
 }
 
 
@@ -41,9 +69,11 @@ body {
     gap: 50px;
 }
 
-.pc_nav li {
+.pc_nav li,
+.pc_p {
     color: #2c5530;
     font-family: "Zen Maru Gothic";
+    font-weight: 700;
 }
 
 /* スマホ版メニュー */
@@ -230,6 +260,16 @@ h2 {
     margin-bottom: 150px;
     margin-top: 70px;
 }
+
+.item {
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 @media screen and (min-width:1175px) {
     .myfavorit p {
@@ -485,6 +525,8 @@ text {
 
 @media screen and (max-width:1175px) {
 
+
+
     h1 {
         font-size: 64px;
         margin-top: 176px;
@@ -507,8 +549,6 @@ text {
     }
 
     .myfavorit img {
-        margin-left: auto;
-        margin-right: auto;
         width: 300px;
         border: 1px solid #ffffff;
         border-radius: 200px;
@@ -599,5 +639,60 @@ text {
     .greenfootprints img {
         margin-top: 60%;
         width: 26%;
+    }
+}
+
+
+
+/* ローディング画面 */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: linear-gradient(135deg, #61BB6A, #98D53E);
+    text-align: center;
+}
+
+#loading_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading .kvArea {
+    width: 100%;
+}
+
+#loading .kvArea .img_box {
+    text-align: center;
+}
+
+#loading .kvArea .img_box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100px);
     }
 }

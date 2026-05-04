@@ -165,6 +165,7 @@ h2 {
     width: 35%;
     color: #333333;
     font-family: "Zen Maru Gothic";
+    line-height: 1.5;
 }
 
 .icetext {
@@ -241,5 +242,68 @@ footer ul li {
     h2 {
         font-size: 16px;
         font-weight: 300;
+    }
+
+    .removebutton button {
+        padding: 12px 36px;
+        font-size: 16px;
+    }
+
+    .icecream,
+    .icetext {
+        display: none;
+    }
+
+    .icecream_sp {
+        margin-top: 20px;
+    }
+
+    .icecream_sp img {
+        width: 77%;
+    }
+
+    .icecream_sp p {
+        font-size: 16px;
+        color: #333333;
+        font-family: "Zen Maru Gothic";
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+
+    .arrow {
+        position: relative;
+        display: inline-block;
+        padding: 0 0 0 16px;
+        color: #000;
+        vertical-align: middle;
+        font-size: 15px;
+        width: 1%;
+    }
+
+    .arrow::before,
+    .arrow::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        content: "";
+        vertical-align: middle;
+    }
+
+    .sample4-1::before {
+        left: 10px;
+        box-sizing: border-box;
+        width: 10px;
+        height: 10px;
+        border: 10px solid transparent;
+        border-top: 10px solid #ffffff;
+    }
+
+}
+
+@media screen and (min-width:1175px) {
+    .icecream_sp {
+        display: none;
     }
 }

@@ -190,7 +190,7 @@ section {
     position: relative;
 }
 
-.reason img {
+.about_pc {
     position: absolute;
     top: 0;
     left: 0;
@@ -254,6 +254,71 @@ footer ul li {
 }
 
 @media screen and (max-width:1175px) {
+    .reason {
+        position: relative;
+    }
+
+    .about_sp1 {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .about_sp2 {
+        position: absolute;
+        top: 1600px;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .horizontal-bar {
+        width: 290px;
+        height: 1px;
+        background: #ffffff;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    /* 左側の丸 */
+    .horizontal-bar::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* 右側の丸 */
+    .horizontal-bar::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border-radius: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    .reason h3,
+    .mydream h3 {
+        margin-bottom: 5px;
+    }
+
+    .reason p,
+    .mydream p {
+        margin-top: 20px;
+    }
+
+
     .myprofile img {
         width: 67%;
     }
@@ -274,5 +339,24 @@ footer ul li {
     .mydream h3 {
         font-size: 24px;
         font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .reason p,
+    .mydream p {
+        line-height: 2;
+    }
+
+    .about_pc {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1175px) {
+
+    .sp_br,
+    .about_sp1,
+    .about_sp2 {
+        display: none;
     }
 }

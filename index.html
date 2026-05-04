@@ -14,6 +14,7 @@
         rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
@@ -23,10 +24,10 @@
             <img src="./image/logo.png" alt="ロゴ">
             <nav class="pc_nav">
                 <ul>
-                    <li>私について</li>
-                    <li>コンセプト</li>
-                    <li>制作実績</li>
-                    <li>スキル</li>
+                    <li><a href="#about_us">私について</a></li>
+                    <li><a href="#concept">コンセプト</a></li>
+                    <li><a href="#production">制作実績</a></li>
+                    <li><a href="#skill">スキル</a></li>
                 </ul>
             </nav>
 
@@ -85,12 +86,23 @@
     <section>
         <h2>私の好きなこと・もの</h2>
         <div class="myfavorit">
-            <img src="./image/eat.svg" alt="食べる">
-            <p class="eat_p">EAT</p>
-            <img src="./image/make.svg" alt="作る">
-            <p class="make_p">MAKE</p>
-            <img src="./image/speak.svg" alt="話す">
-            <p class="talk_p">TALK</p>
+            <div class="item">
+                <img src="./image/eat.svg" onmouseover="this.src='./image/eat_hover.svg'"
+                    onmouseout="this.src='./image/eat.svg'">
+                <p class="eat_p">EAT</p>
+            </div>
+
+            <div class="item">
+                <img src="./image/make.svg" onmouseover="this.src='./image/make_hover.svg'"
+                    onmouseout="this.src='./image/make.svg'">
+                <p class="make_p">MAKE</p>
+            </div>
+
+            <div class="item">
+                <img src="./image/speak.svg" onmouseover="this.src='./image/talk_hover.svg'"
+                    onmouseout="this.src='./image/speak.svg'">
+                <p class="talk_p">TALK</p>
+            </div>
         </div>
         <p class="more_p">Vew More...</p>
     </section>
@@ -203,5 +215,18 @@
     </script>
 
 </body>
+
+<div id="loading">
+    <div class="kvArea" id="loading_box">
+        <div class="img_box"><img src="./image/loading.svg" alt="" class="fadeUp"></div>
+    </div>
+</div>
+
+<script>
+    $(window).on('load', function () {
+        $("#loading").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+        $("#loading_box").delay(1200).fadeOut('slow');//ローディング画像を1.2秒（1200ms）待機してからフェードアウト
+    });
+</script>
 
 </html>

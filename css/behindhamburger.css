@@ -176,6 +176,7 @@ h2 {
     width: 35%;
     color: #333333;
     font-family: "Zen Maru Gothic";
+    line-height: 1.5;
 }
 
 .icetext {
@@ -252,5 +253,74 @@ footer ul li {
     h2 {
         font-size: 16px;
         font-weight: 300;
+    }
+
+    .humburgarpop,
+    .icetext,
+    .humburgarluxury {
+        display: none;
+    }
+
+    .humburgarpop_sp {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 77%;
+    }
+
+    .humburgarpop_sp img,
+    .humburgarluxury_sp img {
+        width: 77%;
+    }
+
+    .humburgarpop_sp p,
+    .humburgarluxury_sp p {
+        font-size: 16px;
+        color: #333333;
+        font-family: "Zen Maru Gothic";
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+
+    .arrow {
+        position: relative;
+        display: inline-block;
+        padding: 0 0 0 16px;
+        color: #000;
+        vertical-align: middle;
+        font-size: 15px;
+        width: 1%;
+    }
+
+    .arrow::before,
+    .arrow::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        content: "";
+        vertical-align: middle;
+    }
+
+    .sample4-1::before {
+        left: 10px;
+        box-sizing: border-box;
+        width: 10px;
+        height: 10px;
+        border: 10px solid transparent;
+        border-top: 10px solid #ffffff;
+    }
+
+    .removebutton button {
+        font-size: 16px;
+        padding: 12px 36px;
+    }
+}
+
+@media screen and (min-width:1175px) {
+
+    .humburgarpop_sp,
+    .humburgarluxury_sp {
+        display: none;
     }
 }
