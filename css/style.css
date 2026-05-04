@@ -226,7 +226,8 @@ h1 {
 }
 
 .button,
-.button2 {
+.button2,
+.more_p {
     text-align: center;
     font-family: "Hanalei";
 }
@@ -559,20 +560,12 @@ text {
         margin-bottom: 48px;
     }
 
-    .tree {
-        display: flex;
-        gap: 80px;
-    }
+
 
     .tree img {
         margin-bottom: 128px;
         margin: 0 auto;
     }
-
-
-
-
-
 
 
 
@@ -655,7 +648,7 @@ text {
         margin-top: 40px;
         border: 1px solid #ffffff;
         border-radius: 200px;
-        padding: 5px;
+        /* padding: 5px; */
     }
 
     .tree img {
@@ -750,5 +743,15 @@ text {
 
     h1 {
         font-size: 64px;
+    }
+
+    .concept p {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:475px) {
+    .sp_br {
+        display: none;
     }
 }
