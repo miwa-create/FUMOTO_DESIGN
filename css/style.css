@@ -32,7 +32,8 @@ body {
 
 .pc_p:hover,
 .button button:hover,
-.more_p:hover {
+.button2 button:hover,
+.more_p button:hover {
     cursor: pointer;
     background-color: #FFFCB8;
 }
@@ -263,6 +264,7 @@ h2 {
 
 .item {
     cursor: pointer;
+    width: 21%;
 }
 
 
@@ -289,14 +291,11 @@ h2 {
     }
 }
 
-.myfavorit img {
-    width: 21%;
-}
 
 .climber img {
     display: block;
     margin: 0 auto;
-    width: 17%;
+    width: 240px;
     margin-bottom: 210px;
 }
 
@@ -377,7 +376,6 @@ h2 {
     margin: 0 auto;
     width: 111%;
     margin-bottom: 104px;
-    position: absolute;
     top: 55%;
     z-index: 1;
 }
@@ -387,7 +385,7 @@ h2 {
     margin: 0 auto;
     width: 7%;
     margin-bottom: 150px;
-    margin-top: 40%;
+    margin-top: 88px;
 }
 
 footer ul {
@@ -406,7 +404,7 @@ footer ul li {
 .logoblack img {
     display: block;
     margin: 0 auto;
-    width: 28%;
+    width: 250px;
 }
 
 
@@ -420,6 +418,7 @@ footer {
     bottom: 0;
     right: 0%;
     width: 38%;
+    opacity: 0.9;
 }
 
 .cloud img {
@@ -427,6 +426,7 @@ footer {
     bottom: 0;
     left: 0%;
     width: 38%;
+    opacity: 0.9;
 }
 
 
@@ -476,15 +476,20 @@ text {
     font-size: 16px;
     font-family: "Hanalei";
     letter-spacing: 2px;
-    fill: #61bb6a;
+    fill: #FFF75E;
     /* 文字の色 */
+    transition: 0.3s;
 }
+
+
+
+
 
 
 /* ホバー時に少し大きくする演出 */
 .circle-top-btn:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease;
+    transition: 0.3s;
 }
 
 /* ばつ用 */
@@ -520,12 +525,16 @@ text {
 
 /* 必要に応じてSVGテキストの色もここで変更できます */
 .circle-top-btn.is-active text {
-    fill: #FFF75E;
+
+    fill: #61bb6a;
 }
+
 
 @media screen and (max-width:1175px) {
 
-
+    .item {
+        width: 100%;
+    }
 
     h1 {
         font-size: 64px;
@@ -553,6 +562,9 @@ text {
         border: 1px solid #ffffff;
         border-radius: 200px;
         padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .myfavorit p {
@@ -584,17 +596,17 @@ text {
         transform: translateX(-50%);
     }
 
-    .more_p {
+    .more_p button {
         font-size: 16px;
         font-family: "Alatsi";
         font-weight: 700;
         color: #333333;
-        text-align: center;
         background: #ffffff;
         border: 2px solid #333333;
         padding: 12px 36px;
         border-radius: 50px;
         margin-bottom: 88px;
+        cursor: pointer;
     }
 
     .button2 {
@@ -637,7 +649,7 @@ text {
     }
 
     .greenfootprints img {
-        margin-top: 60%;
+        margin-top: 88px;
         width: 26%;
     }
 }
@@ -694,5 +706,11 @@ text {
     to {
         opacity: 0;
         transform: translateY(-100px);
+    }
+}
+
+@media screen and (max-width:475px) {
+    .header_wrap img {
+        width: 80%;
     }
 }

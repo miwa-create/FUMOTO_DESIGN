@@ -324,3 +324,9 @@ footer ul li {
         display: none;
     }
 }
+
+@media screen and (max-width:475px) {
+    .header_wrap img {
+        width: 80%;
+    }
+}

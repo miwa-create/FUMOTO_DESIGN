@@ -246,9 +246,16 @@ footer ul li {
         margin-bottom: 10px;
         font-weight: 500;
         text-align: left;
+        width: calc(40% + 30px);
     }
 
     .submit-btn {
         margin-left: 1%;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .header_wrap img {
+        width: 80%;
     }
 }

@@ -306,3 +306,9 @@ footer ul li {
         width: 56%;
     }
 }
+
+@media screen and (max-width:475px) {
+    .header_wrap img {
+        width: 80%;
+    }
+}

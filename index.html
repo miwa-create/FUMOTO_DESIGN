@@ -104,7 +104,9 @@
                 <p class="talk_p">TALK</p>
             </div>
         </div>
-        <p class="more_p">Vew More...</p>
+        <div class="more_p">
+            <button>Vew More...</button>
+        </div>
     </section>
 
     <section class="climber">
@@ -186,8 +188,8 @@
                 </text>
             </svg>
         </div>
-        <img src="./image/topbuttongreen.svg" alt="ページトップボタンの通常時" class="img-default">
-        <img src="./image/logoyellow.svg" alt="ページトップボタンの黄色版" class="img-scroll">
+        <img src="./image/logoyellow.svg" alt="ページトップボタンの通常時" class="img-default">
+        <img src="./image/topbuttongreen.svg" alt="ページトップボタンの黄色版" class="img-scroll">
     </a>
 
 
@@ -202,8 +204,9 @@
         // スクロールするとロゴの色変更
         $(function () {
             $(window).on("scroll", function () {
-                const sliderHeight = $(".mv").height();
-                if (sliderHeight - 30 < $(this).scrollTop()) {
+                const mountain = $(".mountainillustration").offset().top; + $(".mountainillustration").innerHeight();
+                const windowHeight = $(window).innerHeight()
+                if (mountain - windowHeight + 300 < $(this).scrollTop()) {
                     $(".js-header").addClass("headerColorScroll");
                     $(".circle-top-btn").addClass("is-active");
                 } else {
