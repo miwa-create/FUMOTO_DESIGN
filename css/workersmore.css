@@ -275,6 +275,9 @@ footer ul li {
 
 .remodal-cancel {
     display: block;
+    min-width: 0;
+    width: 70px;
+    height: 70px;
     font-size: 32px;
     color: #333333;
     background: #ffffff;
@@ -283,6 +286,8 @@ footer ul li {
     top: 5px;
     right: 5px;
     z-index: 1000;
+    height: 80px;
+    width: 80px;
 }
 
 .remodal-cancel:hover {

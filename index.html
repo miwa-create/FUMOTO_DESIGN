@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ポートフォリオ_麓美和子</title>
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +20,20 @@
 </head>
 
 <body>
+    <!-- 1. アニメーション用の円を追加 -->
+    <div class="circle">
+        <div class="animation-bg"></div>
+    </div>
+
+
     <div class="mainvisual">
         <header class="header_wrap">
             <img src="./image/logo.png" alt="ロゴ">
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#about_us">私について</a></li>
+                    <li><a href="about.html">私について</a></li>
                     <li><a href="#concept">コンセプト</a></li>
-                    <li><a href="#production">制作実績</a></li>
+                    <li><a href="production.html">制作実績</a></li>
                     <li><a href="#skill">スキル</a></li>
                 </ul>
             </nav>
@@ -52,7 +59,7 @@
         <div class="mainmountain">
             <img src="./image/mainmountain.svg" alt="メインの山">
         </div>
-        <div class="name">
+        <div class="name" id="concept">
             <p>麓から、共に山頂へ</p>
         </div>
         <div class="concept">
@@ -131,8 +138,12 @@
                 Vew More...
             </button>
         </div>
+        <div class="tree">
+            <img src="./image/yellowtree_sp.svg" alt="黄色の木">
+            <img src="./image/yellowtree_sp.svg" alt="黄色の木">
+        </div>
     </section>
-    <section class="skill-top">
+    <section class="skill-top" id="skill">
         <h2>スキル</h2>
         <div class="skill-card">
             <div class="skill1">

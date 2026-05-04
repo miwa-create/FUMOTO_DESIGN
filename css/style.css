@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background: linear-gradient(#61bb6a, #d3e6d5);
@@ -529,6 +531,11 @@ text {
     fill: #61bb6a;
 }
 
+@media screen and (min-width:1175px) {
+    .tree img {
+        display: none;
+    }
+}
 
 @media screen and (max-width:1175px) {
 
@@ -537,7 +544,7 @@ text {
     }
 
     h1 {
-        font-size: 64px;
+        font-size: 120px;
         margin-top: 176px;
     }
 
@@ -547,6 +554,29 @@ text {
         padding: 12px 36px;
         margin-top: 3%;
     }
+
+    .button2 {
+        margin-bottom: 48px;
+    }
+
+    .tree {
+        display: flex;
+        gap: 80px;
+    }
+
+    .tree img {
+        margin-bottom: 128px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+
+
 
     section h2 {
         font-size: 24px;
@@ -626,6 +656,10 @@ text {
         border: 1px solid #ffffff;
         border-radius: 200px;
         padding: 5px;
+    }
+
+    .tree img {
+        border: none;
     }
 
     .button2 button {
@@ -712,5 +746,52 @@ text {
 @media screen and (max-width:475px) {
     .header_wrap img {
         width: 80%;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+}
+
+
+
+
+/* 円を包むコンテナ */
+.circle {
+    pointer-events: none;
+    /* クリックを邪魔しないようにする */
+}
+
+/* アニメーション本体 */
+.circle .animation-bg {
+    background: #75bec2;
+    position: fixed;
+    z-index: 9999;
+    /* 一番上に表示 */
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+
+    /* 最初は巨大な円で画面を覆っておく */
+    transform: scale(100);
+
+    /* アニメーションの設定 */
+    animation-name: PageAnime-circle;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes PageAnime-circle {
+    0% {
+        transform: scale(100);
+        /* 画面を覆い尽くしている状態 */
+    }
+
+    100% {
+        transform: scale(0);
+        /* 中心に向かって消える */
     }
 }
