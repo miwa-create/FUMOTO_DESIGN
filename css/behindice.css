@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 body {
     background: #7BBE82;
 }
@@ -256,6 +257,10 @@ footer ul li {
 
     .icecream_sp {
         margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
     }
 
     .icecream_sp img {
@@ -263,11 +268,57 @@ footer ul li {
     }
 
     .icecream_sp p {
+        width: 80%;
         font-size: 16px;
         color: #333333;
         font-family: "Zen Maru Gothic";
         line-height: 1.5;
-        margin-top: 15px;
+        margin: 15px 0;
+    }
+
+    /* 矢印（スマホ用）のスタイル */
+    .arrow.sample4-2 {
+        position: relative;
+        /* PC版の absolute を解除 */
+        display: block;
+        /* 縦に並ぶように block に */
+        width: 100%;
+        /* 親の幅いっぱいに広がらないよう 0 に */
+        height: 50px;
+        /* 矢印のスペースを確保 */
+        margin: 24px 0;
+        /* 上下の余白 */
+        padding: 0;
+        /* paddingのリセット */
+        background: none;
+        border: none;
+        text-align: center;
+    }
+
+    .sample4-2::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border: 50px solid transparent;
+        /* 矢印のサイズ調整 */
+        border-width: 40px 50px 0 50px;
+        border-color: #E4F7E8 transparent transparent transparent;
+        margin: 0;
+
+
+
+    }
+}
+
+@media screen and (min-width:1175px) {
+    .icecream_sp {
+        display: none;
     }
 
     .arrow {
@@ -297,14 +348,7 @@ footer ul li {
         width: 10px;
         height: 10px;
         border: 10px solid transparent;
-        border-top: 10px solid #ffffff;
-    }
-
-}
-
-@media screen and (min-width:1175px) {
-    .icecream_sp {
-        display: none;
+        border-left: 10px solid #ffffff;
     }
 }
 
