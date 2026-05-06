@@ -330,3 +330,40 @@ footer ul li {
         width: 80%;
     }
 }
+
+/* 円が消えた後に、下のコンテンツを触れるようにするための設定 */
+.circle {
+    pointer-events: none;
+}
+
+.circle .animation-bg {
+    background: #7BBE82;
+    /* あなたのブランドカラーですね */
+    position: fixed;
+    z-index: 9999;
+    /* 他のどの要素よりも上に表示させる */
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+
+    /* アニメーションの指示 */
+    animation-name: PageAnime-circle;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/* アニメーションの中身：巨大(100倍)から消失(0)へ */
+@keyframes PageAnime-circle {
+    0% {
+        transform: scale(100);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 1;
+    }
+}
