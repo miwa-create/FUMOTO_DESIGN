@@ -22,6 +22,7 @@ body {
     cursor: pointer;
     color: #2c5530;
     font-family: "Zen Maru Gothic";
+    border: 2px #333333 solid;
 }
 
 
@@ -31,9 +32,11 @@ body {
     gap: 50px;
 }
 
-.pc_nav li {
+.pc_nav li,
+.pc_p {
     color: #2c5530;
     font-family: "Zen Maru Gothic";
+    font-weight: 700;
 }
 
 /* スマホ版メニュー */
@@ -65,6 +68,15 @@ body {
 .sp_nav,
 .pc_p .sp_btn {
     display: none;
+}
+
+.pc_p {
+    padding: 25px 52px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: "Zen Maru Gothic";
+    cursor: pointer;
+    border: 2px #333333 solid;
 }
 
 @media screen and (max-width:1175px) {
@@ -250,9 +262,10 @@ footer ul li {
 }
 
 @media screen and (max-width:1175px) {
-    h2 {
-        font-size: 16px;
-        font-weight: 300;
+    section h2 {
+        font-family: "Zen Maru Gothic";
+        font-size: 24px;
+        font-weight: 700;
     }
 
     .humburgarpop,
@@ -264,12 +277,14 @@ footer ul li {
     .humburgarpop_sp {
         margin-top: 20px;
         margin-bottom: 50px;
+    }
+
+    .humburgarpop_sp img {
         width: 77%;
     }
 
-    .humburgarpop_sp img,
     .humburgarluxury_sp img {
-        width: 77%;
+        width: 87%;
     }
 
     .humburgarpop_sp p,
@@ -365,5 +380,88 @@ footer ul li {
     100% {
         transform: scale(0);
         opacity: 1;
+    }
+}
+
+
+
+@media screen and (max-width:1175px) {
+    h2 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .removebutton button {
+        padding: 12px 36px;
+        font-size: 16px;
+    }
+
+    .humburgarpop,
+    .humbergarluxury,
+    .icetext {
+        display: none;
+    }
+
+    .humburgarpop_sp,
+    .humburgarluxury_sp {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    /* .humburgarpop_sp img,
+    .humburgarluxury_sp img {
+        width: 77%;
+    } */
+
+    .humburgarpop_sp p,
+    .humburgarluxury_sp p {
+        width: 87%;
+        font-size: 16px;
+        color: #333333;
+        font-family: "Zen Maru Gothic";
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+
+    /* 矢印（スマホ用）のスタイル */
+    .arrow.sample4-2 {
+        position: relative;
+        /* PC版の absolute を解除 */
+        display: block;
+        /* 縦に並ぶように block に */
+        width: 100%;
+        /* 親の幅いっぱいに広がらないよう 0 に */
+        height: 50px;
+        /* 矢印のスペースを確保 */
+        margin: 24px 0;
+        /* 上下の余白 */
+        padding: 0;
+        /* paddingのリセット */
+        background: none;
+        border: none;
+        text-align: center;
+    }
+
+    .sample4-2::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border: 50px solid transparent;
+        /* 矢印のサイズ調整 */
+        border-width: 40px 50px 0 50px;
+        border-color: #E4F7E8 transparent transparent transparent;
+        margin: 0;
+
+
+
     }
 }

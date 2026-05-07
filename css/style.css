@@ -153,6 +153,16 @@ body {
     color: #fff;
     font-size: 36px;
     font-family: "Zen Maru Gothic";
+    cursor: pointer;
+}
+
+.pc_p {
+    padding: 25px 52px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: "Zen Maru Gothic";
+    cursor: pointer;
+    border: 2px #333333 solid;
 }
 
 .sp_nav,
