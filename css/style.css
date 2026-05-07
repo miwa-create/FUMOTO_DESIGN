@@ -629,12 +629,18 @@ footer ul li:hover {
         margin-top: 176px;
     }
 
-    .button button,
     .button2 button {
         font-size: 16px;
         padding: 12px 36px;
         margin-top: 80px;
     }
+
+    .button button {
+        font-size: 16px;
+        padding: 12px 36px;
+        margin-top: 120px;
+    }
+
 
     .button2 {
         margin-bottom: 48px;
