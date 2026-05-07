@@ -281,9 +281,7 @@ h1 {
     top: 120px;
 }
 
-/* .button {
-    padding-top: 30px;
-} */
+
 
 .button,
 .yellowfootprints {
@@ -638,12 +636,10 @@ footer ul li:hover {
     .button button {
         font-size: 16px;
         padding: 12px 36px;
-    }
-
-
-    .button {
         margin-top: 500px;
     }
+
+
 
     .button2 {
         margin-bottom: 48px;
@@ -843,10 +839,6 @@ footer ul li:hover {
     .grassland img {
         display: none;
     }
-
-    /* .button button {
-        margin-top: 360px;
-    } */
 }
 
 @media screen and (min-width:475px) {
