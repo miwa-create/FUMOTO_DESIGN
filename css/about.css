@@ -305,10 +305,11 @@ section {
 .removebutton button {
     background: #ffffff;
     padding: 15px 45px;
-    font-size: 20px;
+    font-size: 16px;
     border-radius: 50px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 700;
+    border: 2px solid #333333;
     margin-bottom: 176px;
 }
 

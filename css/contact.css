@@ -276,7 +276,8 @@ textarea {
 
 .submit-btn {
     font-family: "Zen Maru Gothic";
-    padding: 22px 68px;
+    font-weight: 500;
+    padding: 15px 45px;
     border: none;
     border-radius: 30px;
     background-color: #ffffff;
@@ -288,6 +289,7 @@ textarea {
 }
 
 .submit-btn:hover {
+    color: #2C5530;
     background-color: #FFFCB8;
 }
 

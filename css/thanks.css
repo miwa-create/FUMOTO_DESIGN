@@ -64,6 +64,7 @@
 .button2 button:hover,
 .more_p button:hover {
     cursor: pointer;
+    color: #2C5530;
     background-color: #FFFCB8;
 }
 
@@ -238,6 +239,7 @@ p {
 
 .removebutton button {
     font-family: "Zen Maru Gothic";
+    font-weight: 500;
     background: #ffffff;
     padding: 15px 40px;
     font-size: 20px;

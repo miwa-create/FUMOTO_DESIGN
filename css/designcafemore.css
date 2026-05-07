@@ -309,6 +309,7 @@ footer ul li {
 }
 
 .removebutton button:hover {
+    color: #2C5530;
     background-color: #FFFCB8;
 }
 
