@@ -92,6 +92,19 @@ body {
     border: 2px #333333 solid;
 }
 
+.header_wrap img {
+    transition: opacity 0.3s;
+}
+
+.header_wrap img:hover {
+    opacity: 0.7;
+}
+
+footer ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 
 .pc_nav ul {
     list-style: none;
@@ -195,7 +208,7 @@ h2 {
     color: #2c5530;
     font-family: "Zen Maru Gothic";
     text-align: center;
-    margin-top: 12%;
+    margin-top: 80px;
     font-size: 24px;
 }
 
@@ -273,6 +286,7 @@ footer ul li {
     font-size: 16px;
     margin-bottom: 38px;
     text-align: center;
+    cursor: pointer;
 }
 
 .logoblack img {

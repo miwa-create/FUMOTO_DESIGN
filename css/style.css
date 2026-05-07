@@ -464,6 +464,7 @@ footer ul li {
     font-size: 16px;
     margin-bottom: 38px;
     text-align: center;
+    cursor: pointer;
 }
 
 .logoblack img {
@@ -551,16 +552,21 @@ text {
     cursor: pointer;
 }
 
+.header_wrap img {
+    transition: opacity 0.3s;
+}
+
+.header_wrap img:hover {
+    opacity: 0.7;
+}
+
 
 
 /* ホバー時に少し大きくする演出 */
-.circle-top-btn:hover {
+.circle-top-btn:hover,
+footer ul li:hover {
     transform: scale(1.1);
     transition: 0.3s;
-}
-
-footer ul li {
-    transform: scale(1.1);
 }
 
 
