@@ -841,9 +841,9 @@ footer ul li:hover {
         display: none;
     }
 
-    .button button {
+    /* .button button {
         margin-top: 360px;
-    }
+    } */
 }
 
 @media screen and (min-width:475px) {
