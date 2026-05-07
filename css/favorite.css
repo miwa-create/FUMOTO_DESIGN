@@ -312,7 +312,7 @@ footer ul li {
     .eat img,
     .make img,
     .speak img {
-        width: 100%;
+        width: 320px;
         /* height: 320px; */
         object-fit: contain;
         border-radius: 50%;
