@@ -302,7 +302,7 @@ footer ul li {
     }
 }
 
-@media screen and (min-width:1175px) {
+@media screen and (min-width:600px) {
     .sp_br {
         display: none;
     }

@@ -253,6 +253,7 @@ p {
 
 h3 {
     font-size: 24px;
+    font-weight: 500;
     margin-bottom: 16px;
 }
 
@@ -334,11 +335,12 @@ footer ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Zen Maru Gothic";
+    font-weight: 500;
     background: #ffffff;
     border-radius: 50px;
     color: #333333;
-    width: 100px;
-    height: 30px;
+    padding: 7px 15px;
     box-sizing: border-box;
     text-decoration: none;
     transition-duration: 0.3s;
@@ -416,7 +418,7 @@ footer ul li {
 
     .explanation h3,
     .point h3 {
-        font-weight: 300;
+        font-weight: 500;
     }
 
     .explanation h3::before,

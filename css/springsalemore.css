@@ -254,6 +254,7 @@ p {
 
 h3 {
     font-size: 24px;
+    font-weight: 500;
     margin-bottom: 16px;
 }
 
@@ -359,7 +360,7 @@ footer ul li {
 
     .explanation h3,
     .point h3 {
-        font-weight: 300;
+        font-weight: 500;
     }
 
     .explanation h3::before,
