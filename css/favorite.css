@@ -174,11 +174,18 @@ body {
     .eat img,
     .make img,
     .speak img {
-        max-width: none;
         width: 150px;
         height: 150px;
         object-fit: contain;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        padding: 10px;
+        /* 4. 中央寄せ */
+        display: block;
         margin: 0 auto;
+
+        /* PC版の指定をリセット */
+        max-width: none;
     }
 
     .eat h3,
