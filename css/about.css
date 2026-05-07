@@ -1,11 +1,5 @@
 @charset "utf-8";
 
-body {
-    background: #7BBE82;
-}
-
-
-
 
 /* 円が消えた後に、下のコンテンツを触れるようにするための設定 */
 .circle {
@@ -43,6 +37,48 @@ body {
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
+
+
+
+body {
+    background: #7BBE82;
+}
+
+.pc_nav a {
+    /* 下準備：アニメーションを滑らかにするため */
+    background-image: linear-gradient(yellow, yellow);
+    background-repeat: no-repeat;
+    background-position: center left;
+    /* 線の開始位置 */
+    background-size: 0% 30%;
+    /* 最初は横幅0%、高さ40%（線の太さ） */
+    transition: background-size 0.3s;
+
+    display: inline;
+    /* インライン要素に適用 */
+    text-decoration: none;
+}
+
+.pc_nav a:hover {
+    cursor: pointer;
+    background-size: 100% 40%;
+}
+
+.pc_p:hover,
+.removebutton button:hover,
+.button2 button:hover,
+.more_p button:hover {
+    cursor: pointer;
+    background-color: #FFFCB8;
+}
+
 
 
 

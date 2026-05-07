@@ -547,7 +547,9 @@ text {
 }
 
 
-
+.header_wrap img {
+    cursor: pointer;
+}
 
 
 
@@ -556,6 +558,11 @@ text {
     transform: scale(1.1);
     transition: 0.3s;
 }
+
+footer ul li {
+    transform: scale(1.1);
+}
+
 
 /* ばつ用 */
 .sp_btn.open span {

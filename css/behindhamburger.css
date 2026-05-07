@@ -1,5 +1,77 @@
 @charset "utf-8";
 
+/* 円が消えた後に、下のコンテンツを触れるようにするための設定 */
+.circle {
+    pointer-events: none;
+}
+
+.circle .animation-bg {
+    background: #7BBE82;
+    /* あなたのブランドカラーですね */
+    position: fixed;
+    z-index: 9999;
+    /* 他のどの要素よりも上に表示させる */
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+
+    /* アニメーションの指示 */
+    animation-name: PageAnime-circle;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/* アニメーションの中身：巨大(100倍)から消失(0)へ */
+@keyframes PageAnime-circle {
+    0% {
+        transform: scale(100);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 1;
+    }
+}
+
+
+.pc_nav a {
+    /* 下準備：アニメーションを滑らかにするため */
+    background-image: linear-gradient(yellow, yellow);
+    background-repeat: no-repeat;
+    background-position: center left;
+    /* 線の開始位置 */
+    background-size: 0% 30%;
+    /* 最初は横幅0%、高さ40%（線の太さ） */
+    transition: background-size 0.3s;
+
+    display: inline;
+    /* インライン要素に適用 */
+    text-decoration: none;
+}
+
+.pc_nav a:hover {
+    cursor: pointer;
+    background-size: 100% 40%;
+}
+
+.pc_p:hover,
+.removebutton button:hover,
+.button2 button:hover,
+.more_p button:hover {
+    cursor: pointer;
+    background-color: #FFFCB8;
+}
+
+
+
+
+
+
+
 body {
     background: #7BBE82;
 }
@@ -329,6 +401,8 @@ footer ul li {
     .removebutton button {
         font-size: 16px;
         padding: 12px 36px;
+        font-weight: 700;
+        border: 2px solid #333333;
     }
 }
 
@@ -346,42 +420,7 @@ footer ul li {
     }
 }
 
-/* 円が消えた後に、下のコンテンツを触れるようにするための設定 */
-.circle {
-    pointer-events: none;
-}
 
-.circle .animation-bg {
-    background: #7BBE82;
-    /* あなたのブランドカラーですね */
-    position: fixed;
-    z-index: 9999;
-    /* 他のどの要素よりも上に表示させる */
-    top: calc(50% - 1rem);
-    left: calc(50% - 1rem);
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-
-    /* アニメーションの指示 */
-    animation-name: PageAnime-circle;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-/* アニメーションの中身：巨大(100倍)から消失(0)へ */
-@keyframes PageAnime-circle {
-    0% {
-        transform: scale(100);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(0);
-        opacity: 1;
-    }
-}
 
 
 
