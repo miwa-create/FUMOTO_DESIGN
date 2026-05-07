@@ -286,6 +286,7 @@ textarea {
     transition: 0.3s;
     margin-top: 64px;
     margin-left: 883px;
+    border: 2px solid #333333;
 }
 
 .submit-btn:hover {
