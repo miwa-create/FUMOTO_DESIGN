@@ -168,12 +168,36 @@ body {
     .make,
     .speak {
         flex-direction: column;
+        margin: 48px 20px 0;
+    }
+
+    .eat img,
+    .make img,
+    .speak img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        margin: 0 auto;
     }
 
     .eat h3,
     .make h3,
     .speak h3 {
         text-align: center;
+        margin-top: 10px;
+    }
+
+    .eat p,
+    .make p,
+    .speak p {
+        width: 100%;
+        /* 固定幅320pxよりも100%の方が柔軟です */
+        max-width: 400px;
+        /* 広がりすぎないように制限 */
+        margin: 16px auto 0;
+        /* 中央寄せ */
+        text-align: left;
+        /* 文章は左揃えの方が見やすいです */
     }
 
 
@@ -272,6 +296,7 @@ h2 {
 }
 
 .removebutton button {
+    font-family: "Zen Maru Gothic";
     color: #333333;
     background: #ffffff;
     padding: 15px 45px;
