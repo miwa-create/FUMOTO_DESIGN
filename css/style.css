@@ -87,7 +87,9 @@ body {
 .button2 button:hover,
 .more_p button:hover {
     cursor: pointer;
+    color: #2C5530;
     background-color: #FFFCB8;
+    border-color: #2C5530;
 }
 
 
