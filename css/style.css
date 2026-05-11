@@ -407,7 +407,29 @@ h2 {
     margin: 0 auto;
     width: 240px;
     margin-bottom: 210px;
+    /* アニメーションの適用 */
+    animation: yuraYura 2s ease-in-out infinite alternate;
+    /* 回転の中心を上端中央に設定（オプション） */
+    transform-origin: center;
 }
+
+
+@keyframes yuraYura {
+    0% {
+        transform: rotate(5deg);
+        /* 右に5度 */
+    }
+
+    100% {
+        transform: rotate(-5deg);
+        /* 左に5度 */
+    }
+}
+
+
+
+
+
 
 .productionresults_pc>img {
     display: block;
@@ -516,7 +538,7 @@ footer ul li {
 .logoblack img {
     display: block;
     margin: 0 auto;
-    width: 250px;
+    width: 30%;
 }
 
 
