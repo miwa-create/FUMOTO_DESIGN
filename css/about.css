@@ -315,6 +315,8 @@ section {
 
 .removebutton button {
     background: #ffffff;
+    font-family: "Zen Maru Gothic";
+    color: #333333;
     padding: 15px 45px;
     font-size: 16px;
     border-radius: 50px;
