@@ -914,3 +914,28 @@ body.is-visited #loading {
         display: none;
     }
 }
+
+
+
+
+.greenfootprints img,
+.yellowfootprints img {
+    /* アニメーションの指定 */
+    animation: fadeInDown 1.5s ease-out forwards;
+    opacity: 0;
+    /* 初期状態は透明 */
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+        /* 上に20pxずらしておく */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* 元の位置に戻る */
+    }
+}
