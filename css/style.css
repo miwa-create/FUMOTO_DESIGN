@@ -821,7 +821,8 @@ footer ul li:hover {
         width: 200%;
     }
 
-    .greenfootprints img {
+    .greenfootprints img,
+    .yellowfootprints {
         margin-top: 88px;
         width: 26%;
     }
