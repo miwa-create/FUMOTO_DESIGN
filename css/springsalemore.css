@@ -320,6 +320,7 @@ footer ul li {
 
 
 .removebutton button {
+    color: #333333;
     font-family: "Zen Maru Gothic";
     background: #ffffff;
     padding: 15px 45px;
@@ -381,6 +382,7 @@ footer ul li {
     }
 
     section img {
+        width: 80%;
         margin-bottom: 35px;
     }
 

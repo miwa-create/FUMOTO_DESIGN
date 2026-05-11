@@ -277,6 +277,7 @@ textarea {
 }
 
 .submit-btn {
+    color: #333333;
     font-family: "Zen Maru Gothic";
     font-weight: 500;
     padding: 15px 45px;
