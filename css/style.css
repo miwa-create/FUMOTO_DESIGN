@@ -350,11 +350,7 @@ h1 {
     border: 2px solid #333333;
 }
 
-.yellowfootprints img {
-    display: block;
-    margin: 0 auto;
-    width: 7%;
-}
+
 
 h2 {
     color: #2C5530;
@@ -513,7 +509,8 @@ h2 {
     z-index: 1;
 }
 
-.greenfootprints img {
+.greenfootprints img,
+.yellowfootprints img {
     display: block;
     margin: 0 auto;
     width: 7%;
@@ -822,7 +819,7 @@ footer ul li:hover {
     }
 
     .greenfootprints img,
-    .yellowfootprints {
+    .yellowfootprints img {
         margin-top: 88px;
         width: 26%;
     }
