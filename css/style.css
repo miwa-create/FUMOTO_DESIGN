@@ -478,6 +478,7 @@ h2 {
 }
 
 .skill-top {
+    margin-top: 210px;
     position: relative;
 }
 
@@ -689,10 +690,6 @@ footer ul li:hover {
 
 
 
-    .tree img {
-        margin-bottom: 128px;
-        padding-left: 88px;
-    }
 
 
 
