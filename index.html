@@ -214,7 +214,14 @@
                 $(".sp_btn").toggleClass("open");
                 $(".sp_nav").fadeToggle();
             });
-        })
+
+            // ★追加：メニュー内のリンクをクリックした時
+            $(".sp_nav a").on("click", function () {
+                $(".sp_btn").removeClass("open"); // ボタンの×印などを元に戻す
+                $(".sp_nav").fadeOut();           // メニューを閉じる
+            });
+
+        });
 
         // スクロールするとロゴの色変更
         $(function () {
