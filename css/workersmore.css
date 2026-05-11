@@ -466,4 +466,8 @@ footer ul li {
     .header_wrap img {
         width: 80%;
     }
+
+    .section img {
+        width: 90%;
+    }
 }
