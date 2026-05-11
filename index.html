@@ -17,6 +17,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+
+    <script>if (sessionStorage.getItem('visited')) { document.documentElement.className = 'is-visited'; }</script>
+
 </head>
 
 <body>
@@ -53,7 +56,7 @@
                 </ul>
             </nav>
 
-            <button class="pc_p"><a href="contact.html">お問い合わせ</a></button>
+            <nav class="pc_p"><a href="contact.html">お問い合わせ</a></nav>
         </header>
         <h1>FUMOTO <br class="br-sp">DESIGN</h1>
         <div class="mainmountain">
@@ -130,9 +133,9 @@
             </div>
         </div>
         <div class="production_sp">
-            <img src="./image/hairsalon_sp.png" alt="ヘアサロンの画像">
-            <img src="./image/workers_sp.png" alt="ワーカーズの画像">
-            <img src="./image/designcafe_sp.png" alt="デザインカフェの画像">
+            <img src="./image/hairsalon_sp.png" alt="ヘアサロンの画像" class="target">
+            <img src="./image/workers_sp.png" alt="ワーカーズの画像" class="target">
+            <img src="./image/designcafe_sp.png" alt="デザインカフェの画像" class="target">
         </div>
         <div class="button2">
             <button>
@@ -237,10 +240,45 @@
     </div>
 </div>
 
-<script>
+<!-- <script>
     $(window).on('load', function () {
         $("#loading").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
         $("#loading_box").delay(1200).fadeOut('slow');//ローディング画像を1.2秒（1200ms）待機してからフェードアウト
+
+        if (sessionStorage.getItem('visited')) {
+            // 【2回目以降】すぐに非表示にする
+            loader.hide();
+            loaderBox.hide();
+        } else {
+            // 【初回のみ】セッションに記録して、アニメーション実行
+            sessionStorage.setItem('visited', 'true');
+
+            loaderBox.delay(1200).fadeOut('slow');
+            loader.delay(1500).fadeOut('slow');
+        }
+
+    });
+</script> -->
+
+<script>
+    $(window).on('load', function () {
+        // 1. まず変数を作ります（loaderとloaderBoxの中身を定義）
+        var loader = $("#loading");
+        var loaderBox = $("#loading_box");
+
+        // 2. もし訪問済みだったら
+        if (sessionStorage.getItem('visited')) {
+            loader.hide(); // 即座に非表示
+            loaderBox.hide(); // 即座に非表示
+        }
+        // 3. 初めての訪問だったら
+        else {
+            sessionStorage.setItem('visited', 'true'); // 訪問済みとして記録
+
+            // 初回だけアニメーションを実行
+            loaderBox.delay(1200).fadeOut('slow');
+            loader.delay(1500).fadeOut('slow');
+        }
     });
 </script>
 

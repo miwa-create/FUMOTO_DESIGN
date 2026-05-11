@@ -10,7 +10,42 @@ html {
     scroll-behavior: smooth;
 }
 
+/* 円が消えた後に、下のコンテンツを触れるようにするための設定 */
+.circle {
+    pointer-events: none;
+}
 
+.circle .animation-bg {
+    background: #7BBE82;
+    /* あなたのブランドカラーですね */
+    position: fixed;
+    z-index: 9999;
+    /* 他のどの要素よりも上に表示させる */
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+
+    /* アニメーションの指示 */
+    animation-name: PageAnime-circle;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/* アニメーションの中身：巨大(100倍)から消失(0)へ */
+@keyframes PageAnime-circle {
+    0% {
+        transform: scale(100);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 1;
+    }
+}
 
 
 
@@ -50,7 +85,6 @@ html {
         opacity: 1;
     }
 } */
-
 
 
 
@@ -107,7 +141,6 @@ html {
     box-sizing: border-box;
 }
 
-.header_wrap p,
 .pc_nav {
     background: #ffffff;
     padding: 25px 52px;
@@ -116,6 +149,16 @@ html {
     cursor: pointer;
     color: #2c5530;
     font-family: "Zen Maru Gothic";
+    border: 2px #333333 solid;
+}
+
+.pc_p {
+    background-color: #ffffff;
+    padding: 25px 52px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: "Zen Maru Gothic";
+    cursor: pointer;
     border: 2px #333333 solid;
 }
 
@@ -161,15 +204,6 @@ html {
     cursor: pointer;
 }
 
-.pc_p {
-    padding: 25px 52px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-family: "Zen Maru Gothic";
-    cursor: pointer;
-    border: 2px #333333 solid;
-}
-
 .sp_nav,
 .pc_p .sp_btn {
     display: none;
@@ -178,6 +212,12 @@ html {
 
 
 @media screen and (max-width:1175px) {
+
+
+
+
+
+
     .name p {
         font-size: 24px !important;
     }
@@ -651,7 +691,7 @@ footer ul li:hover {
 
     .tree img {
         margin-bottom: 128px;
-        margin: 0 auto;
+        padding-left: 88px;
     }
 
 
@@ -822,6 +862,13 @@ footer ul li:hover {
         transform: translateY(-100px);
     }
 }
+
+body.is-visited #loading {
+    display: none;
+}
+
+
+
 
 @media screen and (max-width:475px) {
     .header_wrap img {

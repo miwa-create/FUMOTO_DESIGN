@@ -161,6 +161,7 @@ body {
 }
 
 .pc_p {
+    background-color: #fff;
     padding: 25px 52px;
     border-radius: 50px;
     font-size: 16px;
@@ -170,6 +171,7 @@ body {
 }
 
 @media screen and (max-width:1175px) {
+
 
     .pc_nav,
     .pc_p {
@@ -447,6 +449,7 @@ footer ul li {
 
 
 @media screen and (max-width:1175px) {
+
     h2 {
         font-size: 16px;
         font-weight: 300;
